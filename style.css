@@ -1,0 +1,128 @@
+/* Basic body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f0f8ff; /* Light blue background */
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Main container with flexbox for vertical layout */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between search and details section, with space for button at bottom */
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 80vh; /* Full viewport height */
+    margin: 0 auto;
+  }
+  
+  h1 {
+    margin-top: 2%;
+    color: #ff4500;
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  
+  /* Search section */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 0px;
+  }
+  
+  .controls input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: 2px solid #0073e6;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 5px 11px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+  }
+  
+  /* Pokémon details section */
+  .pokemon {
+    margin-top: 0px;
+    padding: 4px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Allow this section to take available space */
+  }
+  
+  .pokemon h3 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .pokemon p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .pokemon img {
+    max-width: 100%; /* Full width for better responsiveness */
+    height: auto;
+    max-height: 100%; /* Limit the height for large images */
+    margin: 10px 0;
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image is well-sized and covers its container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Datalist Styling */
+  input[type="text"] {
+    outline: none;
+  }
+  
+  /* Styling the datalist */
+  datalist {
+    display: none;
+  }
+  
+  /* Refresh button at the bottom center */
+  .refresh-btn {
+    align-self: center;
+    margin-top: 10px;
+    padding: 15px 20px;
+    background-color: #28a745; /* Green color for the refresh button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  
+  .refresh-btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+  }
+  
+  .refresh-btn i {
+    font-size: 20px;
+  }
+  
